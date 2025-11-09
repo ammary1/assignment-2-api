@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assignment 2 – Public API Fetch</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="CPIT-405 Assignment 2: Fetch & Display Data from Public APIs" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>University Search (Public API)</h1>
+    <p class="subtitle">Type a name and fetch results using JavaScript <code>fetch()</code></p>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <label for="query" class="sr-only">Search by name</label>
+      <input id="query" type="search" placeholder="e.g., king, harvard, technology…" />
+      <button id="btnSearch" aria-label="Search">🔎 Search</button>
+      <button id="btnSample" aria-label="Sample">✨ Try ‘king’</button>
+    </section>
+
+    <section id="status" class="status" aria-live="polite"></section>
+
+    <section class="table-wrap">
+      <table class="results" aria-describedby="status">
+        <thead>
+          <tr>
+            <th>University</th>
+            <th>Country</th>
+            <th>Web Page</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"><!-- rows injected here --></tbody>
+      </table>
+    </section>
+
+    <section class="cards" id="cards"><!-- optional cards injected here --></section>
+  </main>
+
+  <footer class="footer">
+    <div>King Abdulaziz University — FCIT — CPIT-405 (Internet Applications) — Fall 2025</div>
+    <div>Assignment 2: Fetch & Display Data from Public APIs — Deadline: 13-11-2025</div>
+  </footer>
+
+  <script>
+    console.log("You got this! 🚀 Just one fetch() away from greatness.");
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
